@@ -1,10 +1,10 @@
 {
-  "name": "inotebook-backend",
+  "name": "CloudNotes-backend",
   "version": "1.0.0",
   "description": "A notebook on the cloud which you can access from any corner of the world to save and share your notes.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm i"
   },
