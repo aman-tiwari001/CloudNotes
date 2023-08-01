@@ -5,9 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./assets/bg.jpg);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  font-family: 'ubuntu';
+}
+
+i {
+  cursor: pointer;
+}
+
+.alert-custom {
+  position: fixed;
+  top: 57px;
+  height: 8vh;
+  z-index: 9;
+  font-size: 1.1rem;
+}
+
+/* For PC screens with a width greater than or equal to 768px */
+@media only screen and (min-width: 768px) {
+  .alert-custom {
+    width: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* For phone screens with a width less than 768px */
+@media only screen and (max-width: 767px) {
+  .alert-custom {
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  nav {
+    height: 10vh;
+  }
+}
+
+.inp-fsize { 
+  font-size: 1.2rem;
 }
